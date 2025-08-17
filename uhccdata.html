@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 	<head>
-		<title>Zachary Higa's Portfolio - CCSSE Administration</title>
+		<title>Zachary Higa's Portfolio - UHCC Data Dashboards</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -154,11 +154,95 @@
 						<p>
 							The Financial Aid dashboard was originally created to provide a high-level overview of financial aid to administrators in the UHCC
 							system.  From this dashboard, you can look at the distribution of federal, state, institutional, and external aid given to students
-							in the past aid years.  
+							in the past aid years.
 							<br />
 							<br />
+							OVPCC's director of student success also requested if we could have a financial aid sankey dashboard that
+							track students' pathways from admission and FAFSA submission through financial aid awarding to UHCC enrollment.
+							Thus, I utilized Tableau's new sankey viz extension and built a Tableau dashboard that currently sits in Tableau Cloud.
+							Though the dashboard is currently not public, here is an image of what the dashboard looks like below.
 						</p>
 					</div>
+					<div style="text-align:center">
+						<object data=
+						"images/Screenshot 2025-08-16 215536.png"
+							width="60%"
+							height=auto>
+						</object>
+					</div>
+					<div style="text-align: left">
+						<p>
+							After reviewing these dashboards with financial aid officers, we found that the data being pulled was focusing only on
+							home campus students, so it was not capturing other students who may be receiving financial aid at a non-home campus.
+							Additionally, the financial aid officers said that the data provided to them is not actionable, so we are reassessing the
+							data that is being provided in the dashboards.  In the meantime, we are preparing a presentation to the Chancellors, Vice Chancellors of
+							Student Affairs, and Financial Aid officers in September to review UHCC's financial aid awarding strategy.  A short version
+							of the presentation was presented at the 2025 UH Institutional Research Summit in July.
+						</p>
+					</div>
+					<div style="text-align:center">
+						<h2>Performance Indicators Dashboard</h2>
+					</div>
+					<div style="text-align: left">
+						<p>
+							Working alongside OVPCC's former director of Institutional Effectiveness, we developed updated metrics that were
+							approved by the UHCC chancellors to be used for UHCC performance funding starting in 2025.  Since the metrics were updated,
+							I was tasked with developing a new Tableau dashboard to visualize these metrics.  Unlike the other three dashboards mentioned above,
+							this dashboard is public and not protected behind a UH login due to ACCJC accreditation standards.  The dashboard is embedded below.
+						</p>
+					</div>
+					<!-- Centering Container -->
+<div style="display: flex; justify-content: center; width: 100%;">
+
+  <!-- Tableau Wrapper with Max Width -->
+  <div style="max-width: 1000px; width: 100%; position: relative;">
+
+    <!-- Tableau Placeholder -->
+    <div class='tableauPlaceholder' id='viz1755418153570' style='width: 100%;'>
+      <noscript>
+        <a href='https://uhcc.hawaii.edu/'>
+          <img alt=' ' src='https://public.tableau.com/static/images/Pe/PerformanceIndicators_16710663472470/UHCCPerformanceIndicators/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='width: 100%; height: auto;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='PerformanceIndicators_16710663472470/UHCCPerformanceIndicators' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Pe/PerformanceIndicators_16710663472470/UHCCPerformanceIndicators/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+
+    <!-- Tableau JS -->
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1755418153570');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1000px';
+        vizElement.style.height = '1550px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '1000px';
+        vizElement.style.height = '1550px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1850px';
+      }
+      vizElement.style.display = 'block'; // Ensure it's visible
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+</div>
+
   				</div>
 			</div>
 
