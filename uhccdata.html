@@ -102,12 +102,59 @@
 					</div>
 					<div style="text-align: left">
 						<p>
-							
-						</br>
-                            
+							As an IT Data analyst at OVPCC, I maintain the following four dashboards in our <a href="https://uhcc.hawaii.edu/data/">UHCC data</a> site.
+							The four dashboards that I am responsible for maintaining are: Credit Courses, Continuing Education, Financial Aid, and
+							Performance Indicators dashboard.
 						</p>
 					</div>
-
+					<div style="text-align:center">
+						<h2>Credit Courses Dashboard</h2>
+					</div>
+					<div style="text-align: left">
+						<p>
+							The Credit Courses dashboard contains enrollment data, academic data, and demographic data of students in our
+							UHCC credit programs.  Adhering to the DOE regulations, we suppress small cell sizes for categories where the denominator
+							is smaller than 10 and the numerator is smaller than 5.  The dashboard pulls from UH's ODS via Oracle SQL.
+							<br />
+							<br />
+							However, in October, there will be a migration to Banner Baseline 9 and ODS will be replaced by Ellucian Insights.
+							With this migration, I am in the process of converting the Oracle SQL script to PostgreSQL since the Ellucian Insights
+							platform will pull from a PostgreSQL database.  Additionally, this new PostgreSQL script will pull from Banner tables rather
+							than ODS tables since the ODS tables will not reside in the UH system tenant in Insights.
+						</p>
+					</div>
+					<div style="text-align:center">
+						<h2>Continuing Education Dashboard</h2>
+					</div>
+					<div style="text-align: left">
+						<p>
+							Similar to the Credit Courses dashboard, the Continuing Education dashboard contains enrollment data and demographic data of students in our
+							UHCC non-credit programs and adheres to small cell size suppression.  However, instead of pulling from ODS, the dashboard pulls from 
+							a Non-Credit perpetual data source in Tableau Cloud that is connected to our Destiny database (where most of our UHCC non-credit data resides).
+							<br />
+							<br />
+							Though most of our non-credit data resides in Destiny, Honolulu CC apprenticeship and Hawaii CC ESOL are two programs that
+							are in our Banner SIS.  Because of this, I created a new data source in Tableau Cloud that connects to Banner and pulls the
+							apprenticeship and ESOL data via Oracle SQL.  After that, I created a Tableau Cloud flow that will union the Destiny data source
+							and Banner data source to create a comprehensive data source that includes all non-credit program data.  Then I loaded this new data source
+							to the Continuing Education Dashboard.
+						</p>
+					</div>
+					<object data=
+						"images/Tableau Flow.png"
+							width="60%"
+							height=auto>
+					</object>
+					<div style="text-align:center">
+						<h2>Financial Aid Dashboard</h2>
+					</div>
+					<div style="text-align: left">
+						<p>
+							
+							<br />
+							<br />
+						</p>
+					</div>
   				</div>
 			</div>
 
