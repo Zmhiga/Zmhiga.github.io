@@ -45,8 +45,10 @@
 						<ul>
                             <li class="current"><a href="predictive_retention.html">Predictive Retention Model</a></li>
 							<li><a href="hawaiipromise.html">Hawaii Promise Legislative Reporting</a></li>
-							<li><a href="eng100placement.html">English 100 Placement</a></li>
-                            <li><a href="kcc_survey.html">Kapiolani CC Wellness Survey Analysis</a></li>
+							<li><a href="uhccdata.html">UHCC Data Dashboards</a></li>
+							<li><a href="ccsse.html">CCSSE Survey Administration</a></li>
+							<li><a href="kcc_survey.html">Kapiolani CC Wellness Survey Analysis</a></li>
+							<li><a href="bor.html">Board of Regents Chancellor's Reports</a></li>
 						</ul>
 					</li>
 					<li>
@@ -78,7 +80,6 @@
                                 <ul>
 									<li><a href="github.html">abc.mse R Package</a></li>
 									<li><a href="icom.html">Review of ICOM</a></li>
-                                    <li><a href="tictactoe.html">Inverse TicTacToe Game</a></li>
 								</ul>
                             </li>
 						</ul>
@@ -106,22 +107,26 @@
                             retain from the fall to spring semester based on various factors.  Since there was additional funding
                             that was available at a couple of the community colleges, we decided to look at how the amount of financial
                             aid impacted a student's probability of retention.
-						</br>
+						<br />
+						<br />
                             First, we pulled the student data from UH's Operational Data Store (ODS) with Oracle SQL.
                             The data pull involved multiple common table expressions (CTEs) and subqueries to get the required
                             data needed to train our model.  Then in Python, I used some of the fields to impute missing data
                             such as direct costs that were crucial in assessing financial aid's impact on retention.
-                        </br>
+                        <br />
+						<br />
                             The next step was to train the model in Python, and my colleague and I decided to go with a random forest
                             classification model.  We assessed the model's performance using other models such as logistic regression and
                             gradient boosting classification, but the random forest model had the best performance.  Once the model was trained,
                             we applied it on the student population to get a predictive retention score for each student, and we applied the model
                             for each student multiple times when varying the student's financial aid received to find a student's "sweet spot".
-						</br>
+						<br />
+						<br />
                             We presented the following concept to the UH Community College Chancellors, and two of the seven campuses
                             were interested in piloting the model at their campus.  Additionally, we presented the concept behind the model and an introduction to machine learning
                             at the 2024 UH Institutional Research Summit to other analysts and IT specialists in the UH system.
-						</br>
+						<br />
+						<br />
 							The slides presented at the UH Institutional Research Summit is included below:
 						</p>
 					</div>
