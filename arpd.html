@@ -129,22 +129,29 @@
   <!-- Tableau Wrapper with Max Width -->
   <div style="max-width: 1000px; width: 100%; position: relative;">
 
-    <!-- Tableau Placeholder -->
-    <iframe src="https://public.tableau.com/views/2025ARPDFirst-YearCompletion/POC?:embed=y&:display_count=yes&:toolbar=yes"
-        width="100%"
-        height="1677"
-        frameborder="0"
-        allowfullscreen
-        title="POC Dashboard">
-	</iframe>
+	<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"></script>
+    <div style="width:1500px; height:2027px; margin: 0 auto;">
+      <tableau-viz 
+        id="tableauViz" 
+        src="https://public.tableau.com/views/2025ARPDFirst-YearCompletion/POC"
+        tabs="none"
+        toolbar="bottom"
+        hide-tabs="true"
+        >
+      </tableau-viz>
+    </div>
 
-	<iframe src="https://public.tableau.com/views/2025ARPDFirst-YearCompletion/POC?:embed=y&:display_count=yes&:toolbar=yes&Parameters.Campus=HAW&Parameters.Subject=coreq_math"
-        width="100%"
-        height="1677"
-        frameborder="0"
-        allowfullscreen
-        title="POC Dashboard">
-	</iframe>
+	<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"></script>
+    <div style="width:1500px; height:2027px; margin: 0 auto;">
+      <tableau-viz 
+        id="tableauViz" 
+        src="https://public.tableau.com/views/2025ARPDFirst-YearCompletion/POC?Parameters.Campus=HAW&Parameters.Subject=coreq_math"
+        tabs="none"
+        toolbar="bottom"
+        hide-tabs="true"
+        >
+      </tableau-viz>
+    </div>
 </div>
 
 
